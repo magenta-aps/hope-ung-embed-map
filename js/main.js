@@ -1291,6 +1291,6 @@ var myIcon = L.icon({ // Use custom marker icon
     );
 map.addLayer(markers);
 map.attributionControl.setPrefix(''); // Don't show the 'Powered by Leaflet' text.
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { // Show a map using OSM mapdata
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', { // Show a map using OSM mapdata
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> og <a href="http://www.hope.dk">hope.dk</a>'
 }).addTo(map);
