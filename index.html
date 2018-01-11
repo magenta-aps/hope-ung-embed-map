@@ -14,7 +14,7 @@
     
     <link rel="shortcut icon" type="image/x-icon" href="/hopeungdocs/img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/hopeungdocs/img/apple-touch-icon-precomposed.png">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">  
+    <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">  
 
     <style>
 
@@ -34,7 +34,7 @@
     
     <div id="leaflet_map"></div>
             
-    <script src="/map/json/dkkortdata.js"></script>
+    <script src="/json/dkkortdata.js"></script>
     <script>
         // Init and populate map of Denmark
         var map = L.map('leaflet_map', {
@@ -1333,24 +1333,6 @@
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
         
-        // Tracking events for Google Analytics
-        function trackMarkerHit(title) {
-            ga('send', 'event', {
-                eventCategory: 'Stedkort',
-                eventAction: 'klik på markør',
-                eventLabel: title
-            });
-        };
-        
-    </script>
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-512283-2', 'auto');
-        ga('send', 'pageview');
     </script>
 
   
