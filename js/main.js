@@ -11,7 +11,7 @@ var markers = new L.MarkerClusterGroup({ // For grouping markers near each other
     'zoomToBoundsOnClick': true
 });
 var myIcon = L.icon({ // Use custom marker icon
-    iconUrl: '/map/img/marker.png',
+    iconUrl: '../img/marker.png',
     iconSize: [32, 32]
 });
     
